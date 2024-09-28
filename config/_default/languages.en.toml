@@ -1,0 +1,18 @@
+disabled = false
+languageCode = "en"
+languageName = "English"
+weight = 1
+title = "bochap: Hidden Gems for Curious Minds"
+
+[params]
+displayName = "EN"
+isoCode = "en"
+rtl = false
+dateFormat = "2 January 2006"
+logo = "bochap-logo.png"
+secondaryLogo = "bochap-logo-inverted.png"
+description = "Welcome to the blog of a highly experienced senior software engineer specializing in data platforms. With expertise across multiple languages and a proven track record of delivering impactful solutions, this blog offers insights into engineering mastery, data platform leadership, and strategic solutions. Discover in-depth articles on technology tested and proven, covering codebase consolidation, performance optimization, and alignment with key business goals. Learn from experience in developing high-performance ETL integrations, fulfilling critical customer requests, and optimizing data caching infrastructure. Gain valuable knowledge on resolving technical debt, streamlining workflows, and delivering engineering excellence that aligns with strategic business needs. This blog is a testament to a passion for technology and a commitment to sharing knowledge. Join us on a journey of continuous learning and discovery."
+author = { name = "bochap" }
+
+[author]
+links = []
