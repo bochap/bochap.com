@@ -1,16 +1,23 @@
 colorScheme = "blowfish"
-defaultAppearance = "light"
-autoSwitchAppearance = true
+defaultAppearance = "dark"
+autoSwitchAppearance = false
+
 enableSearch = true
-enableCodeCopy = false
+enableCodeCopy = true
+
 replyByEmail = false
-disableImageOptimization = false
-disableTextInHeader = false
-giteaDefaultServer = "https://git.fsfe.org"
-forgejoDefaultServer = "https://v8.next.forgejo.org"
+disableImageOptimization = true
+disableTextInHeader = true
+
+#giteaDefaultServer = "https://git.fsfe.org"
+#forgejoDefaultServer = "https://v8.next.forgejo.org"
+
+highlightCurrentMenuArea = true
+smartTOC = true
+smartTOCHideUnfocusedChildren = false
 
 [header]
-layout = "basic"
+layout = "fixed"
 
 [footer]
 showMenu = true
@@ -20,14 +27,14 @@ showAppearanceSwitcher = true
 showScrollToTop = true
 
 [homepage]
-layout = "card"
+layout = "background"
 showRecent = true
-showRecentItems = "5"
-showMoreLink = false
-showMoreLinkDest = "/posts/"
+showRecentItems = 12
+showMoreLink = true
+showMoreLinkDest = "/posts"
 cardView = true
 cardViewScreenWidth = false
-layoutBackgroundBlur = false
+layoutBackgroundBlur = true
 
 [article]
 showDate = true
@@ -35,11 +42,11 @@ showViews = false
 showLikes = false
 showDateOnlyInArticle = false
 showDateUpdated = false
-showAuthor = true
-showHero = false
+showAuthor = false
+showHero = true
 layoutBackgroundBlur = true
 layoutBackgroundHeaderSpace = true
-showBreadcrumbs = false
+showBreadcrumbs = true
 showDraftLabel = true
 showEdit = false
 editAppendPath = true
@@ -48,16 +55,19 @@ showHeadingAnchors = true
 showPagination = true
 invertPagination = false
 showReadingTime = true
-showTableOfContents = false
-showTaxonomies = false
-showAuthorsBadges = false
+showTableOfContents = true
+showTaxonomies = true
+showAuthorsBadges = true
 showWordCount = true
 showZenMode = false
+sharingLinks = [ "linkedin", "twitter", "whatsapp", "telegram", "pinterest", "reddit", "facebook", "email"]
+
 
 [list]
-showHero = false
+showHero = true
+heroStyle = "background"
 layoutBackgroundBlur = true
-layoutBackgroundHeaderSpace = true
+layoutBackgroundHeaderSpace = false
 showBreadcrumbs = false
 showSummary = false
 showViews = false
@@ -65,26 +75,27 @@ showLikes = false
 showTableOfContents = false
 showCards = true
 orderByWeight = false
-groupByYear = true
+groupByYear = false
 cardView = true
 cardViewScreenWidth = false
 constrainItemsWidth = false
-heroStyle = "basic"
 
 [sitemap]
-excludedKinds = [ "taxonomy", "term" ]
+excludedKinds = [ ]
 
 [taxonomy]
 showTermCount = true
-showHero = false
+showHero = true
+heroStyle = "background"
 showBreadcrumbs = false
 showViews = false
 showLikes = false
-showTableOfContents = false
+showTableOfContents = true
 cardView = false
 
 [term]
-showHero = false
+showHero = true
+heroStyle = "background"
 showBreadcrumbs = false
 showViews = false
 showLikes = false
