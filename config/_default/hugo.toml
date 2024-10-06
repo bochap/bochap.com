@@ -1,30 +1,16 @@
 theme = "blowfish"
 baseURL = "https://bochap.com/"
 defaultContentLanguage = "en"
-
 enableRobotsTXT = true
 paginate = 18
 summaryLength = 30
-
 buildDrafts = false
 buildFuture = false
-
 enableEmoji = true
+googleAnalytics = "G-SY7QKK17CP"
 
-googleAnalytics = ""
-
-[params.author]
-  name = "Darren Seet"
-  image = "img/avatar.png"
-  headline = "Sr Software Engineer"
-  bio = "Senior Software Engineer"
-  links = [
-    #{ email = "mailto:moibochap@gmail.com" },
-    { linkedin = "https://linkedin.com/in/bochap" },
-    { github = "https://github.com/bochap" },
-    { medium = "https://medium.com/@bochap" },
-  ]
-
+[params]
+author = { name = "Darren Seet", image = "img/avatar.png", headline = "Sr Software Engineer", bio = "Senior Software Engineer", links = [ { linkedin = "https://linkedin.com/in/bochap" }, { github = "https://github.com/bochap" }, { medium = "https://medium.com/@bochap" } ] }
 
 [imaging]
 anchor = "Center"
@@ -44,32 +30,7 @@ priority = 0.5
 home = [ "HTML", "RSS", "JSON" ]
 
 [related]
-  threshold = 1
-  includeNewer = true
-  toLower = true
-
-    [[related.indices]]
-        name = "tags"
-        weight = 100
-
-    [[related.indices]]
-        name = "categories"
-        weight = 100
-
-    [[related.indices]]
-        name = "series"
-        weight = 50
-
-    [[related.indices]]
-        name = "authors"
-        weight = 10
-
-    [[related.indices]]
-        name = "date"
-        weight = 0
-
-    [[related.indices]]
-      applyFilter = true
-      name = 'fragmentrefs'
-      type = 'fragments'
-      weight = 10
+threshold = 1
+includeNewer = true
+toLower = true
+indices = [ { name = "tags", weight = 100 }, { name = "categories", weight = 100 }, { name = "series", weight = 50 }, { name = "authors", weight = 10 }, { name = "date", weight = 0 }, { applyFilter = true, name = "fragmentrefs", type = "fragments", weight = 10 } ]
