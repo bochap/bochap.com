@@ -1,17 +1,11 @@
 colorScheme = "blowfish"
 defaultAppearance = "dark"
 autoSwitchAppearance = false
-
 enableSearch = true
 enableCodeCopy = true
-
 replyByEmail = false
 disableImageOptimization = true
 disableTextInHeader = true
-
-#giteaDefaultServer = "https://git.fsfe.org"
-#forgejoDefaultServer = "https://v8.next.forgejo.org"
-
 highlightCurrentMenuArea = true
 smartTOC = true
 smartTOCHideUnfocusedChildren = false
@@ -60,8 +54,7 @@ showTaxonomies = true
 showAuthorsBadges = true
 showWordCount = true
 showZenMode = false
-sharingLinks = [ "linkedin", "twitter", "whatsapp", "telegram", "pinterest", "reddit", "facebook", "email"]
-
+sharingLinks = [ "linkedin", "twitter", "whatsapp", "telegram", "pinterest", "reddit", "facebook", "email" ]
 
 [list]
 showHero = true
@@ -81,7 +74,7 @@ cardViewScreenWidth = false
 constrainItemsWidth = false
 
 [sitemap]
-excludedKinds = [ ]
+excludedKinds = []
 
 [taxonomy]
 showTermCount = true

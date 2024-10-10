@@ -9,12 +9,6 @@ canonical: https://medium.com/oredi/pytorch-on-google-cloud-platform-gcp-66644bf
 ---
 > 	**Background:** This article looks into how to build a custom Virtual Machine (VM) on GCP with specific PyTorch versions and CUDA support for Deep Learning. The base OS used is Debian Linux 9 (Stretch) although Ubuntu should be similar but not tested.
 
-<figure>
-    <img src="images/banner.webp"
-         alt="PyTorch, Cuda, Deep Learning, GCP">
-    <figcaption>Tool chain for PyTorch Scholarship Challenge on GCP</figcaption>
-</figure>
-
 GCP supports an out of the box OS Image for Deep Learning. The image is Debian based image with PyTorch 1.0.0 (CUDA 10.0) fastai, CUDA and Intel® optimized NumPy, SciPy, and scikit-learn. The image provides the easiest way to deploy a Compute Engine VM that is supported by GCP. The Python version used is Python 3.5 which is installed by default on the image.
 
 This article provides a guide for situations where a specific version is required for PyTorch which could happen due to the following:

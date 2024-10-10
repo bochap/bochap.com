@@ -7,8 +7,7 @@ description: "Creating a authentication mechanism with the cache and secured coo
 tags: ["React", "Apollo Client", "GraphQL", "Authentication", "Node.js", "Javascript"]
 canonical: https://medium.com/oredi/authentication-with-react-apollo-client-and-graphql-5edce538fb52
 ---
-## Creating a authentication mechanism with the cache and secured cookies
-![Authentication, React, Apollo Client, GraphQL](images/banner.webp)
+## Securely authenticate users with cached, secured cookies
 > 	**Background:** In this article, we are going to explore how authentication can be done in an application build using React, Apollo Client and GraphQL. This is an opinionated way to do Authentication without using a Third Party Provider. It is not necessary the most robust or secured method. But it will be a good POC for anyone who wishes to to their own Authentication.
 
 *Prerequisites: This article presumes basic knowledge of React, Apollo Stack and GraphQL*

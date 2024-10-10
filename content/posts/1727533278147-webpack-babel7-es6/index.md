@@ -7,8 +7,7 @@ description: "Creating a web application using ES6 for both code and configurati
 tags: ["Webpack", "Babel 7", "ES6", "Javascript", "Node.js", "Browsers"]
 canonical: https://medium.com/oredi/webpack-with-babel-7-b61f7caa9565
 ---
-## Creating a web application using ES6 for both code and configuration using Webpack 4 and Babel 7 for bundling
-![Babel + Webpack + ES6](images/banner.webp)
+## Build a web app with ES6, bundled by Webpack 4 and Babel 7
 > 	**Background:** Using Webpack with Babel to bundle ES6 web application is a well documented area with pieces of supporting content in various sources like StackOverflow and Git providing information on how to use ES6 for the Webpack config file. But Babel started using scope packages starting from version 7. Since a lot of documentation was written for Babel 6 but not Babel 7. This caused a fair amount of confusion to many developers (Author included). Since many OpenSource packages tend to be to occupied with their own repository to be able to provide full time support or update the documentation. This article hopes to fill up that gap till all the various packages move their versions up.
 
 *Prerequisites: This article presumes that the reader has an understanding behind the choice of using Webpack, Babel and ES6 for web applications. It also assumes a basic understanding of how to use Webpack, Babel and ES6.*
@@ -28,15 +27,15 @@ The following sections detail the actions carried out to create this application
     └── index.template.html
 ```
 
-**Step 1**
+### Installing Webpack packages
 
 In the root folder of the application, we run the following command `npm install --save-dev webpack webpack-cli`. This will install the `webpack` which contains the code for the bundling operations and `webpack-cli` which provides the command line access for Webpack. We passed the option `--save-dev` to indicate that we want `npm` to save these packages as a development dependency in `package.json`
 
-**Step 2**
+### Adding webpack to npm tasks
 
 Next since the Webpack packages are not installed into the global `node_module`, a simple modification is required for `package.json` that will allow this to run the locally installed `webpack-cli`. This uses `npx` package that is available only from `npm` version 5.2.0 onwards. npx allows us to run the task `npm run build` which executes Webpack after adding a new property `“build”: “webpack”` to the scripts property in `package.json`. For npm version < 5.2.0 please refer to footnotes[^1].
 
-**Step 3**
+### Installing Babel packages
 
 This step installs the minimal packages required for Babel 7 to work with Webpack for a web application. In the event, versions > then those in the article introduces breaking changes this article will be updated whenever possible. First run npm install --save-dev babel-loader @babel/core @babel/preset-env html-webpack-plugin script-ext-html-webpack-plugin in the terminal. The following packages will be installed as development dependencies since the packages will not be used in runtime.
 
@@ -46,13 +45,13 @@ This step installs the minimal packages required for Babel 7 to work with Webpac
 4. `html-webpack-plugin` — This is a Webpack plugin that simplifies creation of HTML files to serve your webpack bundles. This is especially useful for webpack bundles that include a hash in the filename which changes every compilation. You can either let the plugin generate an HTML file for you, supply your own template using [lodash templates](https://lodash.com/docs#template), or use your own [loader](https://webpack.js.org/loaders/).
 5. `script-ext-html-webpack-plugin` — This is a Webpack plugin which is not really required by the bare minimal setup as well. But it allows the automation of injecting the bundled javascript into the HTML files that is included in the distribution
 
-**Step 4**
+### Installing Babel dev packages
 
 In this step the package to allow the Webpack configuration file to be written using ES6 is installed. Run `npm install --save-dev @babel/register` in the terminal. The following packages will be installed as development dependencies since the packages will not be used in runtime.
 
 1. `@babel/register` — This scope package provides the require hook that will bind itself to node’s `require` and automatically compile files on the fly for Babel. Webpack uses `js-interpret`[^4] internally to call register the package as a module to transpile the Webpack configuration file for execution. It requires the file to be named with a `.babel.js` suffix to work.
 
-**Step 5**
+### Create webpack configuration file
 
 The final step creates the Webpack configuration file `webpack.config.babel.js` used to configure Webpack. The full details of the configuration file will not be covered here[^5]. But in short it gets the entry javascript file provided and processes it through the modules. It uses plugins to make sure the html is processed as well. The important thing to note is the file is named with a prefix `webpack.config` which is part of the default filename use by Webpack. It also uses the suffix `babel.js` that is used by `js-interpret` to identify configuration files that needs to be transpiled by Babel.
 
@@ -91,7 +90,7 @@ export default {
 };
 ```
 
-**Step 6**
+### Creating Babel configuration file
 
 In the final step, a configuration file is created for Babel `.babelrc`. This is the default file name used by Babel for defining the configuration during the Babel transpilation process.
 
@@ -101,7 +100,7 @@ In the final step, a configuration file is created for Babel `.babelrc`. This is
 }
 ```
 
-**Final Step**
+### Final result
 
 With all the setup done, this will be the final directory tree of the project. (`node_modules` has been ignored to keep this concise)
 
