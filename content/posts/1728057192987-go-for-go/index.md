@@ -249,7 +249,7 @@ func main() {
 }
 ```
 
-2. **Running Your First Go Code:** It's time to put our newly compiled Go compiler to the test.  Navigate to the directory containing the `hello.go` file we created earlier, and run the following command in your terminal.
+3. **Running Your First Go Code:** It's time to put our newly compiled Go compiler to the test.  Navigate to the directory containing the `hello.go` file we created earlier, and run the following command in your terminal.
 
 ```bash
 go run hello.go
