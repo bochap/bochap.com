@@ -21,7 +21,7 @@ Ready to build Go from the ground up? Installing Go from source allows you to pe
 Before we can build Go from source, we need a special ingredient: a Go compiler! Think of it as needing an oven to bake a cake. So let's head to the official Go Website to obtain the binary. 
 
 1. **Get the binary:** Head to the official Go downloads page [here](https://go.dev/dl/). You'll find pre-compiled Go binaries for various systems. Since we're on a MacBook M1, we'll use the go1.23.2.darwin-arm64.tar.gz archive. This gives us a ready-to-use Go toolchain.
-2. **Why the archive?** We're choosing the `.tar.gz` archive over the `.pkg` installer prevent installation of Go into the system wide folders and maintain a clean setup.
+2. **Why the archive?:** We're choosing the `.tar.gz` archive over the `.pkg` installer prevent installation of Go into the system wide folders and maintain a clean setup.
 3. **Get ready to download:** To avoid extra steps and potential interruptions from macOS security prompts, we'll use `curl` to download the Go archive. This method provides a smoother, more efficient compilation experience. Copy the URL for the `tar.gz` file from the Go downloads page, as we'll need it for the curl command.
 
 <figure>
@@ -44,7 +44,7 @@ Before we can build Go from source, we need a special ingredient: a Go compiler!
 tar -xzf go1.23.2.darwin-arm64.tar.gz 
 ```
 
-6. **Verify** Once the extraction is complete, type `ls` in your terminal. You should see a new folder named `go`.
+6. **Verify:** Once the extraction is complete, type `ls` in your terminal. You should see a new folder named `go`.
 
 <figure>
     <img src="images/2_go_for_go_downloading_and_extracting_binary.png"
@@ -198,7 +198,7 @@ GOROOT_BOOTSTRAP=[Path to Go binary]/bin/go ./all.bash
 
 ### Configuring your environment
 
-1. **Setting Up Your Shell** To use the new Go compiler, we need to adjust your shell's settings. On newer macOS versions, this means editing the .zshrc file. Open your terminal and run this command:
+1. **Setting Up Your Shell:** To use the new Go compiler, we need to adjust your shell's settings. On newer macOS versions, this means editing the .zshrc file. Open your terminal and run this command:
 
 ```bash
 vi .zshrc
@@ -210,7 +210,7 @@ vi .zshrc
     <figcaption>Editing .zshrc</figcaption>
 </figure>
 
-2. **Enabling Go Everywhere: Setting the PATH** To use the `go` command without having to specify its full path every time, we need to add its location to the PATH environment variable. This variable tells your shell where to look for executable files.
+2. **Enabling Go Everywhere:** To use the `go` command without having to specify its full path every time, we need to add its location to the PATH environment variable. This variable tells your shell where to look for executable files.
 
 <figure>
     <img src="images/17_go_for_go_vi_zshrc.png"
@@ -220,7 +220,7 @@ vi .zshrc
 
 ### Verifying the installation
 
-1. **Unveiling Your New Go Compiler** Where did our shiny new Go compiler end up? Let's find out! Open a terminal and run the commands below to reveal its location and version.
+1. **Unveiling Your New Go Compiler:** Where did our shiny new Go compiler end up? Let's find out! Open a terminal and run the commands below to reveal its location and version.
 
 ```
 go version
@@ -233,7 +233,7 @@ which go
     <figcaption>Inspecting the Go environment</figcaption>
 </figure>
 
-2. **Taking Go for a Spin** Time for the final test! Let's make sure our Go compiler is working as expected. Create a simple Go program named `hello.go` using the following command and code:
+2. **Taking Go for a Spin:** Time for the final test! Let's make sure our Go compiler is working as expected. Create a simple Go program named `hello.go` using the following command and code:
 
 ```bash
 vi hello.go
