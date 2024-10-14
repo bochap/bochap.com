@@ -3,7 +3,7 @@ slug: 2024-10-04-go-for-go
 title: "Go for Go:  A DIY Guide to Compiling Go on macOS"
 date: 2024-10-04
 draft: false
-description: "Compile #Go on #macOS without installations! This step-by-step guide provides a beginner-friendly approach to building Go from source. Keep your system clean, switch versions effortlessly, and gain a deeper understanding of Go."
+description: "Ditch the installer! Compile Go on macOS like a coding wizard. This beginner-friendly guide unlocks the secrets to building from source."
 tags: ["Go", "Golang", "Go compiler", "Source", "No Installations", "macOS", "ARM", "Go toolchain"]
 ---
 ## Go for Go:  A DIY Guide to Compiling Go on macOS
