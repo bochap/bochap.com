@@ -2,7 +2,7 @@ disabled = false
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "bochap: Hidden Gems for Curious Minds"
+title = "#bochap: Hidden Gems for Curious Minds"
 
 [params]
 displayName = "EN"
