@@ -117,7 +117,7 @@ Now comes the exciting part: building Go from its source code.  The Go source co
 
 ```bash
 git tag --list "go1.23*" # go1.23 is latest version at time of writing
-git checkout tags/1.23.2
+git checkout tags/go1.23.2
 ```
 
 <figure>
@@ -126,10 +126,10 @@ git checkout tags/1.23.2
     <figcaption>Selecting the latest Go tag</figcaption>
 </figure>
 
-2. **Executing the Build:** Almost there! Open your terminal, navigate to the src directory, run the command below. Remember to set the value of `GOROOT_BOOTSTRAP` to the folder housing the binaries download in [Acquiring the binary release](#acquiring-the-binary-release)
+2. **Executing the Build:** Almost there! Open your terminal, navigate to the `src` directory, run the command below. Remember to set the value of `GOROOT_BOOTSTRAP` to the folder housing the binaries download in [Acquiring the binary release](#acquiring-the-binary-release)
 
 ```bash
-GOROOT_BOOTSTRAP=[Path to Go binary]/bin/go ./all.bash
+GOROOT_BOOTSTRAP=[Path to Go binary] ./all.bash
 ```
 
 <figure>
