@@ -129,6 +129,7 @@ git checkout tags/go1.23.2
 2. **Executing the Build:** Almost there! Open your terminal, navigate to the `src` directory, run the command below. Remember to set the value of `GOROOT_BOOTSTRAP` to the folder housing the binaries download in [Acquiring the binary release](#acquiring-the-binary-release)
 
 ```bash
+cd src
 GOROOT_BOOTSTRAP=[Path to Go binary] ./all.bash
 ```
 
