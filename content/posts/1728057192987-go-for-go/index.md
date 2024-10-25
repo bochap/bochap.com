@@ -262,6 +262,10 @@ go run hello.go
     <figcaption>hello.go in action</figcaption>
 </figure>
 
+### Maintaining your installation
+
+Be aware that macOS upgrades sometimes affect the tools used to build software. This can lead to unexpected problems with your installation, such as the Go compiler failing. If you experience issues after a macOS upgrade, recompiling Go from scratch is recommended. You can find the steps to do this in the ["Compiling Go"](#compiling-go) section.
+
 ### Conclusion
 
 You've now mastered the art of building Go from source!  We encourage you to explore the Go source code, experiment with different build options, and share your knowledge with others.  The Go community thrives on collaboration and knowledge sharing.
