@@ -25,10 +25,11 @@ Here's the lowdown on how this is like tech:
 
 ### The Super Staff: REST API 🧑‍🍳
 
-Now, you place your order, right? Who makes that happen? The awesome **restaurant staff**! They take your wishes, dash to the storage (our **database**!) to grab the goods, then get busy in the kitchen. They're grilling those patties, toasting buns, turning potatoes into golden fries, and assembling everything into a delicious meal. Then, they hand over your completed order. <img align="left" width="50%" height="50%" src="images/rest_api.png" alt="Rest APIs">
+Now, you place your order, right? Who makes that happen? The awesome **restaurant staff**! They take your wishes, dash to the freezer (our **database**!) to grab the goods, then get busy in the kitchen. They're grilling those patties, toasting buns, turning potatoes into golden fries, and assembling everything into a delicious meal. Then, they hand over your completed order. <img align="left" width="50%" height="50%" src="images/rest_api.png" alt="Rest APIs">
 
 Here's the tech translation:
 - **Who They Are:** In tech-speak, this amazing staff is our **REST API**. **API** stands for **Application Programming Interface**, and it's a set of rules that lets different software programs talk to each other. **REST (Representational State Transfer)** is a common way these rules are structured for web services.
+Just like a chef has a recipe book with clear steps for every meal, REST gives developers a consistent set of commands. For a burger, an API uses specific actions like GET to see the menu, POST to place a new order, PUT to change an order, or DELETE to cancel it. This consistent system ensures that orders from any source—a website, a mobile app, or a kiosk—are all understood and processed the same way by the kitchen.
 - **Their Job Description:** Think of the **REST API** as the super-efficient digital middleman. When you tap or click something, the REST API hears your request. It fetches what's needed from the **database**, tells the "backend" (that's the kitchen, where the heavy lifting happens!) what to prepare, and then sends the finished information (like your order confirmation or a new webpage) right back to you.
 - **The Gist:** The **REST API** is like the polite and efficient waiter and the skilled chef, all rolled into one digital package. They ensure your order gets processed and delivered smoothly!
 
